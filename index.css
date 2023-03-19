@@ -1,0 +1,62 @@
+body {
+    background-image: url(assets/pictures/notebook.jpg);
+    background-size: cover;
+  }
+  
+  .head {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 45%;
+  }
+
+  
+  .note {
+    position: relative;
+    width: 250px;
+    height: 380px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #d5e03c;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0.9);
+    opacity: 0;
+    animation: fade-in 0.5s forwards;
+  }
+  
+  .note-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .note-date {
+    font-size: 12px;
+  }
+  
+  .note-time {
+    font-size: 10px;
+    margin-bottom: 90%;
+
+  }
+  
+  .note-body {
+    overflow-y: scroll;
+    height: 130px;
+    scroll-behavior: auto;
+  }
+  
+  .form-group {
+    margin-top: 10px;
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transition: 1s;
+    }
+    to {
+      opacity: 1;
+      transition: 7s;
+    }
+  }
+  

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <h1 class="head">task manager</h1>
+    <div class="note">
+        <form>
+            <div class="note-body">
+                <label  for="task-input">Task</label>
+                <input type="text" class="form-control" id="task-text" placeholder="Enter task">
+            </div>
+
+            <div class="form-group">
+                <label for="target-time">Time</label>
+                <input type="time" class="form-control" id="target-time" placeholder="Enter time">
+                <br>
+                <label for="target-date">Date</label>
+                <input type="date" class="form-control" id="target-date" placeholder="Enter date">
+                <button type="button" class="btn btn-primary" onclick="createNote()">Save Task</button>
+                <button type="button" id="reset-button" class="btn btn-danger">Reset</button>
+                <button type="button" id="exit-button" class="btn btn-default">
+
+                    
+                    <span class="glyphicon glyphicon-remove"></span></button>
+            </div>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
